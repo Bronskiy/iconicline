@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: d238720e-9878-42e3-903e-0df3b2806440
+handle: menuLink
+instructions: ''
+name: Link
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

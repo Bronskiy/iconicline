@@ -1,0 +1,52 @@
+{% set form = craft.expressforms.form("contactForm") %}
+
+
+<div class="form-wrapper">
+  <h3 class="h2 text-center"><strong>Contact</strong> form</h3>
+
+{# Flash Success #}
+{% if form.submittedSuccessfully %}
+    <div class="alert alert-success" role="alert">
+        {{ "Form has been submitted successfully!"|t }}
+    </div>
+{% endif %}
+
+{# General Error Handling #}
+{% if not form.valid %}
+    <div class="alert alert-danger" role="alert">
+        {{ "Error! Please review the form and try submitting again."|t }}
+        {% if form.errors|length %}
+            <ul>
+                {% for error in form.errors %}
+                    <li>{{ error|t }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endif %}
+
+{# Automatically set Form tags with Return, CSRF and Honeypot (if enabled) #}
+{{ form.openTag({ return: '?success=1' }) }}
+
+<div class="form-group mb-3{{ form.fields.firstName.hasErrors ? ' has-error' }}">
+  <input class="form-control" type="text" name="firstName" placeholder="{{ form.fields.firstName.label }}" {{ form.fields.firstName.isRequired ? ' required="required"' }} value="{{ form.fields.firstName.value }}">
+</div>
+
+<div class="form-group mb-3{{ form.fields.lastName.hasErrors ? ' has-error' }}">
+  <input class="form-control" type="text" name="lastName" placeholder="{{ form.fields.lastName.label }}" {{ form.fields.lastName.isRequired ? ' required="required"' }} value="{{ form.fields.lastName.value }}">
+</div>
+
+<div class="form-group mb-3{{ form.fields.email.hasErrors ? ' has-error' }}">
+  <input class="form-control" type="email" name="email" placeholder="{{ form.fields.email.label }}" {{ form.fields.email.isRequired ? ' required="required"' }} value="{{ form.fields.email.value }}">
+</div>
+
+
+<div class="form-group mb-3{{ form.fields.comments.hasErrors ? ' has-error' }}">
+  <textarea class="form-control" placeholder="Comments" name="comments" id="comments" rows="3">{{- form.fields.comments.value -}}</textarea>
+</div>
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+{{ form.closeTag }}
+</div>

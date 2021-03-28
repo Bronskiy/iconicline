@@ -1,0 +1,21 @@
+<section class="container">
+  <div class="row featured">
+    <div class="col-md-7 {% if not block.blockImagePosition %}order-md-2{% endif %}">
+      {% if block.blockTitle|length %}
+        <h2>{{ block.blockTitle }}</h2>
+      {% endif %}
+      {{ block.blockDescription }}
+      {% if block.blockLink|length %}
+        {% for button in block.blockLink %}
+          <a href="{{ button.link }}" class="btn btn-primary">{{ button.name }}</a>
+        {% endfor  %}
+      {% endif %}
+    </div>
+    <div class="col-md-5 {% if not block.blockImagePosition %}order-md-1{% endif %}">
+      {% set image = block.blockImage.one() %}
+      {% if image %}
+        <img src="{{ image.getUrl('image480X572') }}" class="{% if block.blockImagePosition %}featured-image-right{% else %}featured-image-left{% endif %} img-fluid mx-auto">
+      {% endif %}
+    </div>
+  </div>
+</section>

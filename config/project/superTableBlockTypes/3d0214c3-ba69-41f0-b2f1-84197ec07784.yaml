@@ -1,0 +1,107 @@
+field: 02eb906e-d3d5-488d-a3cd-e39a9374b182
+fieldLayouts:
+  1702ba86-1a46-4481-a236-e5a7a58ee2df:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b91bbe03-6b1b-4e49-ba80-a91881d6fbbf
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 92b12040-7948-4ba3-b46a-e991db1cd7e2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c139ebce-2b7a-4924-b9f3-937448bfc4bc
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  92b12040-7948-4ba3-b46a-e991db1cd7e2:
+    contentColumnType: text
+    fieldGroup: null
+    handle: partnerLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b91bbe03-6b1b-4e49-ba80-a91881d6fbbf:
+    contentColumnType: text
+    fieldGroup: null
+    handle: partnerName
+    instructions: ''
+    name: Name
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c139ebce-2b7a-4924-b9f3-937448bfc4bc:
+    contentColumnType: string
+    fieldGroup: null
+    handle: partnerLogo
+    instructions: ''
+    name: Logo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7015b8d6-6d31-41d1-9b00-cad0955939aa'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7015b8d6-6d31-41d1-9b00-cad0955939aa'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets

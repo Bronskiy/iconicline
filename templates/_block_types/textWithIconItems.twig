@@ -1,0 +1,31 @@
+<div class="container text-with-icons-items">
+  <div class="row">
+    {% if block.blockTitle or block.blockDescription %}
+    <div class="col-5">
+      {% if block.blockTitle|length %}
+        <h2>{{ block.blockTitle }}</h2>
+      {% endif %}
+
+    {{ block.blockDescription }}
+
+    </div>
+  <div class="col-7">
+    {% else %}
+    <div class="col-12">
+    {% endif %}
+
+    {% if block.blockIconItems|length %}
+    <div class="row">
+
+      {% for item in block.blockIconItems.all() %}
+        <div class="col-4">
+            <i class="pd-icon {{ item.iconName }} mb-4"></i>
+            {{ item.iconDescription }}
+        </div>
+      {% endfor  %}
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+</div>

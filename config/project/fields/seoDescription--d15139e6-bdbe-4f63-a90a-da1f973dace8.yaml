@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 04510cf8-360d-4097-bf54-2cc9ed739a5c
+handle: seoDescription
+instructions: ''
+name: 'SEO Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

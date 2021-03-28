@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: a4045d3d-fdbf-49f5-9ee5-0cd747015bd7
+handle: examplesSubTitle
+instructions: ''
+name: 'Sub Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

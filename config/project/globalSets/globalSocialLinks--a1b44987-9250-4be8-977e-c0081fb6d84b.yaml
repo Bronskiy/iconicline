@@ -1,0 +1,18 @@
+fieldLayouts:
+  03dea817-1e3c-4589-bcae-59659f93a255:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3a20f22f-f437-4034-9649-4c1ed08be3d6
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: globalSocialLinks
+name: 'Global Social Links'

@@ -1,0 +1,18 @@
+{% extends '_layout' %}
+
+{% block body %}
+
+<section class="container row">
+  <div class="col-md-10 offset-md-2 text-center">
+    <h1 class="mb-3">{% if entry.commonTitle|length %}{{ entry.commonTitle }}{% else %}{{ entry.title }}{% endif %}</h1>
+    {% if entry.commonBody|length %}
+      <div class="lead">{{ entry.commonBody }}</div>
+    {% endif %}
+  </div>
+</section>
+
+{% for block in entry.commonSections.all() %}
+  {% include '_block_types/'~block.type ignore missing with { element: block } %}
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: mainMenu
+name: 'Main Menu'
+propagationMethod: all
+siteSettings:
+  fceaf36c-696c-425f-9b59-6c38305a1e8d:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: acc42026-ed8d-4341-876a-5d173956f7fe
+type: structure

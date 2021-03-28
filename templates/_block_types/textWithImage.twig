@@ -1,0 +1,21 @@
+<section class="container">
+  <div class="row">
+    <div class="col-md-6">
+      {% if block.blockTitle|length %}
+        <h1>{{ block.blockTitle }}</h1>
+      {% endif %}
+      {{ block.blockDescription }}
+      {% if block.blockLink|length %}
+        {% for button in block.blockLink %}
+          <a href="{{ button.link }}" class="btn btn-primary">{{ button.name }}</a>
+        {% endfor  %}
+      {% endif %}
+    </div>
+    <div class="col-md-6">
+      {% set image = block.blockImage.one() %}
+      {% if image %}
+        <img src="{{ image.getUrl() }}" class="img-fluid mx-auto">
+      {% endif %}
+    </div>
+  </div>
+</section>

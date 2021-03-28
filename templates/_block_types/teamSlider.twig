@@ -1,0 +1,31 @@
+<section class="container team">
+  {% if block.teamHeading|length %}
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <h2 class="mb-3">{{ block.teamHeading }}</h2>
+    </div>
+  </div>
+  {% endif %}
+  <div class="team-slider">
+      {% for entry in craft.entries().section('team').all() %}
+      <div class="team-item">
+
+        {% set image = entry.teamPhoto.one() %}
+        {% if image %}
+        <img src="{{ image.getUrl('image118X118') }}" alt="{{ entry.title }} photo">
+        {% endif %}
+
+        <h5>{{ entry.title }}</h5>
+
+        {% if entry.teamPosition|length %}
+          <h6>{{ entry.teamPosition }}</h6>
+        {% endif %}
+
+        {% if entry.teamDescription|length %}
+          <p>{{ entry.teamDescription }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+
+    </div>
+  </section>

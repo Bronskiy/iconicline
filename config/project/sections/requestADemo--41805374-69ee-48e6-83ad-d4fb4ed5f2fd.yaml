@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: requestADemo
+name: 'Request a demo'
+propagationMethod: all
+siteSettings:
+  fceaf36c-696c-425f-9b59-6c38305a1e8d:
+    enabledByDefault: true
+    hasUrls: true
+    template: request/index
+    uriFormat: request
+type: single

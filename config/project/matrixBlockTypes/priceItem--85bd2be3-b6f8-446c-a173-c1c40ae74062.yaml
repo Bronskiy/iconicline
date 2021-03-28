@@ -1,0 +1,125 @@
+field: b5994ebe-0a8a-4932-b153-5602247ed36d
+fieldLayouts:
+  e2592e18-664b-4b1a-b362-79636bd2f4f6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f763dc09-7143-4bc0-bf3b-5ffc3858baaa
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 02596d0f-3ed9-480f-9bb4-6a14c3eaf7cf
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29e34732-8de7-4d80-958d-7d578be42908
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 981e1f1b-b87d-4962-9e61-9067801e8da1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  02596d0f-3ed9-480f-9bb4-6a14c3eaf7cf:
+    contentColumnType: text
+    fieldGroup: null
+    handle: priceItemLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  29e34732-8de7-4d80-958d-7d578be42908:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  981e1f1b-b87d-4962-9e61-9067801e8da1:
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: null
+    handle: price
+    instructions: ''
+    name: Price
+    searchable: false
+    settings:
+      decimals: '2'
+      defaultValue: null
+      max: null
+      min: '0'
+      prefix: ''
+      previewCurrency: ''
+      previewFormat: decimal
+      size: null
+      suffix: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  f763dc09-7143-4bc0-bf3b-5ffc3858baaa:
+    contentColumnType: text
+    fieldGroup: null
+    handle: priceItemTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: priceItem
+name: 'Price Item'
+sortOrder: 1

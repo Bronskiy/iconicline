@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: d238720e-9878-42e3-903e-0df3b2806440
+handle: menuTarget
+instructions: ''
+name: Target
+searchable: false
+settings:
+  default: false
+  offLabel: 'Same page'
+  onLabel: 'Open in new tab'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

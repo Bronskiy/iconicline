@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: project-digital.bronskiy.com
+primary: true
+siteGroup: 52a7c431-3243-469d-8d3e-c3222e4ff304
+sortOrder: 1

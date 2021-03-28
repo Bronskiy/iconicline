@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+    RewriteRule (.+) index.php?p=$1 [QSA,L]
+</IfModule>
+
+#####
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /srv/users/serverpilot/apps/project-digital/web/.htpasswd
+Require valid-user
+#####
+
+#####
+SetEnvIf Request_URI ^/ auth=1
+
+AuthName "Please login"
+AuthType Basic
+AuthUserFile /srv/users/serverpilot/apps/project-digital/web/.htpasswd
+
+## first, allow everybody
+Order Allow,Deny
+Satisfy any
+Allow from all
+Require valid-user
+## then, deny only if required
+Deny from env=auth
+#####

@@ -1,0 +1,51 @@
+<script type="text/javascript" src="/assets/libs/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+if ( $( ".examples-buttons" ).length ) {
+  var slider = tns({
+    container: '.examples-buttons',
+    items: 1,
+    responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+
+} else if ($( ".team-slider" ).length) {
+  var slider = tns({
+    container: '.team-slider',
+    mouseDrag: true,
+    loop: true,
+    navPosition: 'bottom',
+    controls: true,
+    // lazyload: true,
+    items: 3,
+    // responsive: {
+    //   640: {
+    //     edgePadding: 20,
+    //     gutter: 20,
+    //     items: 2
+    //   },
+    //   700: {
+    //     gutter: 30
+    //   },
+    //   900: {
+    //     items: 3
+    //   }
+    // }
+  });
+}
+
+</script>
+
+<script type="text/javascript" src='/assets/js/custom.js'></script>

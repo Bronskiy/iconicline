@@ -1,0 +1,25 @@
+{% extends '_layout' %}
+
+{% block body %}
+<section class="container row">
+  <div class="col-md-10 offset-md-2 text-center text-center">
+    <h1 class="mb-3">{% if entry.commonTitle|length %}{{ entry.commonTitle }}{% else %}{{ entry.title }}{% endif %}</h1>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-4">
+      {{ entry.commonBody }}
+    </div>
+    <div class="col-8">
+      {% include "_includes/_request_form" %}
+    </div>
+  </div>
+</section>
+
+{% for block in entry.commonSections.all() %}
+  {% include '_block_types/'~block.type ignore missing with { element: block } %}
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,285 @@
+/* Main */
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(37 37 37 / 0.7);
+  font-size: 16px;
+  line-height: 27px;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  color: #252525;
+}
+h1, .h1{
+  font-size: 70px;
+  /* font-weight: 700; */
+  line-height: 84px;
+}
+h2, .h2{
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 70px;
+}
+h3, .h3{
+
+}
+h4, .h4{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+}
+h5, .h5{
+
+}
+h6, .h6{
+
+}
+p.lead{
+  font-size: 18px;
+}
+a {
+  color: #747373;
+  text-decoration: none;
+}
+a:hover,
+a.active{
+  color: #7449D8;
+}
+.pd-icon {
+  margin-right: 5px;
+}
+.accordion-button{
+  border: 1px dashed #D2D2D2;
+}
+.accordion-button::after{
+  position: absolute;
+  top: 0px;
+  left: -1px;
+}
+.accordion-pricing{
+  padding: 90px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 50px rgba(128, 128, 128, 0.15);
+  border-radius: 1px 150px 150px 150px;
+}
+/* Header */
+.nav-active {
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+nav a:hover,
+nav a.active{
+  font-weight: 700;
+}
+/* Buttons */
+.btn-primary,
+.btn-secondary,
+.btn-outline-primary,
+.btn-outline-secondary {
+  background-color: #7449D8;
+  border-color: #7449D8;
+  min-width: 249px;
+  height: 64px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 64px;
+  padding: 0;
+}
+.btn-outline-primary {
+
+}
+.btn-secondary {
+  background-color: #F2F0F5;
+  border-color: #F2F0F5;
+  color: #9D96AD;
+}
+.btn-outline-secondary {
+  background-color: transparent;
+  border: 2px solid #F8DD23;
+  color: #F8DD23;
+}
+/* Lists */
+section ul {
+  list-style: none;
+  padding: 0;
+}
+section ul li {
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+section ul li:before {
+  content: "\e800";
+  font-family: "projectdigital";
+  display: inline-block;
+  color: #7449D8;
+  margin-left: -50px;
+  width: 50px;
+  font-size: 30px;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: -moz-middle-with-baseline;
+  line-height: 16px;
+}
+/* Forms */
+textarea,
+select,
+input,
+button,
+.btn {
+  outline: none;
+ box-shadow: none !important;
+ -webkit-appearance: none;
+}
+.form-wrapper {
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(128, 128, 128, 0.13);
+  border-radius: 1px 100px 100px 100px;
+  padding: 71px;
+}
+form .form-control{
+  height: 64px;
+  border-radius: 100px;
+  padding-left: 56px;
+}
+form .btn {
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+}
+/* Sections */
+section {
+  padding: 75px 0;
+}
+svg.featured-image-left,
+img.featured-image-left{
+  border-radius: 1px 150px 150px 150px;
+}
+svg.featured-image-right,
+img.featured-image-right{
+  border-radius: 150px 1px 150px 150px;
+}
+section i {
+  color: #7449D8;
+}
+section .social-icons a{
+  background-color: #7449D8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+section .social-icons a i{
+  margin-right: unset;
+  color: #fff;
+}
+/* Call To Action */
+.call-to-action {
+  background: url(../img/call-to-action-bg.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* Team */
+.team-item{
+  background-color: #F8F6FD;
+  border-radius: 1px 100px 100px 100px;
+  padding: 50px;
+}
+/* Footer */
+footer {
+  background-color: #211A32;
+}
+footer .footer-contacts{
+  font-family: 'Poppins', sans-serif;
+}
+footer a {
+  font-weight: 700;
+  color: #fff;
+}
+footer nav {
+  padding: 60px 0;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 60px 0;
+}
+.footer-bottom a{
+  color: #8A8A8A;
+  font-weight: 400;
+}
+footer .social-icons i{
+  font-size: 30px;
+  margin-right: unset;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+}

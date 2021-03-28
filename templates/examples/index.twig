@@ -1,0 +1,33 @@
+{% extends '_layout' %}
+
+{% block body %}
+<section class="container row">
+  <div class="col-md-10 offset-md-2 text-center">
+    <h1 class="mb-3"><strong>Examples</strong></h1>
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+
+    {% for entry in craft.entries().section('examples').all() %}
+    <div class="col-6">
+
+      {% set image = entry.examplesImage.one() %}
+      {% if image %}
+      <img src="{{ image.getUrl('image570X400') }}" alt="{{ entry.title }} photo">
+      {% endif %}
+
+      <h5>{{ entry.title }}</h5>
+
+      {% if entry.examplesSubTitle|length %}
+      <h6>{{ entry.examplesSubTitle }}</h6>
+      {% endif %}
+
+      {# examplesCategories #}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

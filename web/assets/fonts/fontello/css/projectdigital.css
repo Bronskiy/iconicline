@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'projectdigital';
+  src: url('../font/projectdigital.eot?73606701');
+  src: url('../font/projectdigital.eot?73606701#iefix') format('embedded-opentype'),
+       url('../font/projectdigital.woff2?73606701') format('woff2'),
+       url('../font/projectdigital.woff?73606701') format('woff'),
+       url('../font/projectdigital.ttf?73606701') format('truetype'),
+       url('../font/projectdigital.svg?73606701#projectdigital') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'projectdigital';
+    src: url('../font/projectdigital.svg?73606701#projectdigital') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "projectdigital";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-list-element:before { content: '\e800'; } /* '' */
+.icon-phone:before { content: '\e801'; } /* '' */
+.icon-analyse:before { content: '\e802'; } /* '' */
+.icon-device:before { content: '\e803'; } /* '' */
+.icon-write:before { content: '\e804'; } /* '' */
+.icon-scale-up:before { content: '\e806'; } /* '' */
+.icon-design:before { content: '\e807'; } /* '' */
+.icon-package-heart:before { content: '\e808'; } /* '' */
+.icon-monitor-engage:before { content: '\e809'; } /* '' */
+.icon-content-heart:before { content: '\e80a'; } /* '' */
+.icon-theme-manager:before { content: '\e80b'; } /* '' */
+.icon-social-plus:before { content: '\e80c'; } /* '' */
+.icon-social-heart:before { content: '\e80d'; } /* '' */
+.icon-password-protection:before { content: '\e80e'; } /* '' */
+.icon-interactions:before { content: '\e80f'; } /* '' */
+.icon-refresh:before { content: '\e813'; } /* '' */
+.icon-up:before { content: '\e814'; } /* '' */
+.icon-left:before { content: '\e817'; } /* '' */
+.icon-right:before { content: '\e818'; } /* '' */
+.icon-industry:before { content: '\e81a'; } /* '' */
+.icon-down:before { content: '\e81b'; } /* '' */
+.icon-size:before { content: '\e81c'; } /* '' */
+.icon-company:before { content: '\e81d'; } /* '' */
+.icon-marker:before { content: '\e823'; } /* '' */
+.icon-user:before { content: '\e825'; } /* '' */
+.icon-play:before { content: '\e826'; } /* '' */
+.icon-comments:before { content: '\e827'; } /* '' */
+.icon-twitter:before { content: '\e828'; } /* '' */
+.icon-linkedin:before { content: '\e829'; } /* '' */
+.icon-instagram:before { content: '\e82a'; } /* '' */
+.icon-facebook:before { content: '\e82b'; } /* '' */
+.icon-email:before { content: '\e82c'; } /* '' */
+.icon-dot:before { content: '\e82e'; } /* '' */
+.icon-engaging:before { content: '\e82f'; } /* '' */
+.icon-idea:before { content: '\e830'; } /* '' */
+.icon-search:before { content: '\e831'; } /* '' */
+.icon-active-dot:before { content: '\e832'; } /* '' */
+.icon-instagram-l:before { content: '\e833'; } /* '' */
+.icon-linkedin-l:before { content: '\e834'; } /* '' */
+.icon-twitter-l:before { content: '\e835'; } /* '' */
+.icon-facebook-l:before { content: '\e836'; } /* '' */

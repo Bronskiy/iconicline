@@ -1,0 +1,5 @@
+{
+  "buttons": ["formatting","bold", "italic","unorderedlist", "orderedlist", "alignment", "indent", "outdent",
+  "link"],
+  "toolbarFixed": true
+}

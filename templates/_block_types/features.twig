@@ -1,0 +1,28 @@
+<section class="container feature-items">
+{% if block.blockDescription|length or block.blockTitle|length %}
+<div class="row">
+  <div class="col-md-8 offset-md-2 text-center">
+    {% if block.blockTitle|length %}
+    <h2 class="mb-3">{{ block.blockTitle }}</h2>
+    {% endif %}
+    {{ block.blockDescription }}
+  </div>
+</div>
+{% endif %}
+
+{% if block.blockFeatureItems|length %}
+
+<div class="row icon-position-{{ block.blockIconPosition.value }}">
+  {% for item in block.blockFeatureItems %}
+  <div class="col-4 feature-item">
+    <i class="pd-icon {{ item.iconName }} mb-4"></i>
+    <div class="feature-text-wrapper">
+      <h4><strong>{{ item.title }}</strong></h4>
+      {{ item.description }}
+    </div>
+  </div>
+  {% endfor  %}
+</div>
+{% endif %}
+
+</section>

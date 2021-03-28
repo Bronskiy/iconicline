@@ -1,0 +1,63 @@
+field: 6ae50bdf-3ba3-43a5-abc7-629ba49bb875
+fieldLayouts:
+  34c637ed-3f4d-473a-a126-38aea42dfacb:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fbf247bf-efe3-4c05-b0a6-d1b8f60b50bb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  fbf247bf-efe3-4c05-b0a6-d1b8f60b50bb:
+    contentColumnType: string
+    fieldGroup: null
+    handle: featuresItems
+    instructions: ''
+    name: 'Features Items'
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 8e164381-5f0f-42e9-a65e-b15b80c196b2
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 9a5615a7-147d-489d-b974-0c078754fda1
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 3318fa22-7a60-4391-b54f-2846a3a7401b
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_10_featuresitems}}'
+      fieldLayout: table
+      maxRows: '10'
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: featuresTabs
+name: 'Features Tabs'
+sortOrder: 6

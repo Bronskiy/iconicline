@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: e614636e-8818-49ae-819d-5f594b2906f5
+handle: commonSections
+instructions: ''
+name: Sections
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_commonsections}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

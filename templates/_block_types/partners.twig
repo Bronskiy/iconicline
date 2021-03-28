@@ -1,0 +1,24 @@
+{% if block.partnersLogo|length %}
+<section class="partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          {% for item in block.partnersLogo %}
+            <div class="inline-block">
+              {% set image = item.partnerLogo.one() %}
+              {% if image %}
+                {% if item.partnerLink %}
+                  <a href="{{ item.partnerLink }}" target="_blank"><img src="{{ image.getUrl() }}" alt=""></a>
+                {% else %}
+                  <img src="{{ image.getUrl('image169X47') }}" {% if item.partnerName %}alt="{{ item.partnerName }}"{% endif %}>
+                {% endif %}
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

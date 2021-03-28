@@ -1,0 +1,72 @@
+{% set form = craft.expressforms.form("demoForm") %}
+
+<div class="form-wrapper">
+  <h3 class="h2 text-center"><strong>Demo</strong> form</h3>
+  <p class="text-center">Submit your info and one of our advisors will be in touch</p>
+
+{# Flash Success #}
+{% if form.submittedSuccessfully %}
+    <div class="alert alert-success" role="alert">
+        {{ "Form has been submitted successfully!"|t }}
+    </div>
+{% endif %}
+
+{# General Error Handling #}
+{% if not form.valid %}
+    <div class="alert alert-danger" role="alert">
+        {{ "Error! Please review the form and try submitting again."|t }}
+        {% if form.errors|length %}
+            <ul>
+                {% for error in form.errors %}
+                    <li>{{ error|t }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endif %}
+
+{# Automatically set Form tags with Return, CSRF and Honeypot (if enabled) #}
+{{ form.openTag({ return: '?success=1' }) }}
+
+<div class="row mb-3">
+  <div class="col{{ form.fields.firstName.hasErrors ? ' has-error' }}">
+    <input class="form-control" type="text" name="firstName" placeholder="{{ form.fields.firstName.label }}" {{ form.fields.firstName.isRequired ? ' required="required"' }} value="{{ form.fields.firstName.value }}">
+  </div>
+  <div class="col{{ form.fields.lastName.hasErrors ? ' has-error' }}">
+    <input class="form-control" type="text" name="lastName" placeholder="{{ form.fields.lastName.label }}" {{ form.fields.lastName.isRequired ? ' required="required"' }} value="{{ form.fields.lastName.value }}">
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col{{ form.fields.email.hasErrors ? ' has-error' }}">
+    <input type="email" class="form-control" placeholder="Email">
+    <input class="form-control" type="email" name="email" placeholder="{{ form.fields.email.label }}" {{ form.fields.email.isRequired ? ' required="required"' }} value="{{ form.fields.email.value }}">
+  </div>
+  <div class="col">
+    <input type="phone" class="form-control" placeholder="Phone">
+  </div>
+</div>
+
+<div class="form-group mb-3{{ form.fields.companyName.hasErrors ? ' has-error' }}">
+  <input class="form-control" type="text" name="companyName" placeholder="{{ form.fields.companyName.label }}" {{ form.fields.companyName.isRequired ? ' required="required"' }} value="{{ form.fields.companyName.value }}">
+</div>
+
+<div class="row mb-3">
+  <div class="col">
+    <select id="inputState" class="form-control">
+      <option selected>Company size</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col">
+    <select id="inputState" class="form-control">
+      <option selected>Industry</option>
+      <option>...</option>
+    </select>
+  </div>
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+{{ form.closeTag }}
+</div>

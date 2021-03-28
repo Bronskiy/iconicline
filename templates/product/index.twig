@@ -1,0 +1,9 @@
+{% extends '_layout' %}
+
+{% block body %}
+
+{% for block in entry.commonSections.all() %}
+  {% include '_block_types/'~block.type ignore missing with { element: block } %}
+{% endfor %}
+
+{% endblock %}

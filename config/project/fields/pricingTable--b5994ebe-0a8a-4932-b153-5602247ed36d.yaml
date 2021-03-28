@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 1954a8c9-d6e7-4096-aa0b-67c1f79afd04
+handle: pricingTable
+instructions: ''
+name: 'Pricing Table'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_pricingtable}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

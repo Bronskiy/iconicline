@@ -1,0 +1,30 @@
+<section class="container publications">
+<div class=" examples-round-borders">
+  <div class="row">
+    <div class="col-md-6">
+      {% if block.blockTitle|length %}
+        <h3 class="h2 mt-5 mb-5">{{ block.blockTitle }}</h3>
+      {% endif %}
+
+      {{ block.blockDescription }}
+
+      {% if block.blockLink|length %}
+        {% for button in block.blockLink %}
+        <a href="{{ button.link }}" class="btn btn-primary">{{ button.name }}</a>
+        {% endfor  %}
+      {% endif %}
+    </div>
+
+    {% for item in block.blockExamplesItems %}
+    <div class="col-md-6">
+      {{ item.title }}
+      {% set image = item.examplesImage.one() %}
+      {% if image %}
+        <img src="{{ image.getUrl('image570X400') }}" class="example-image img-fluid mx-auto">
+      {% endif %}
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+</section>

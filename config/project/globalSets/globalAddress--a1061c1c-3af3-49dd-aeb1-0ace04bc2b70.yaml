@@ -1,0 +1,18 @@
+fieldLayouts:
+  c1a68712-cec2-4abf-8423-613d3c5da1de:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8a391d76-5ebb-404a-9e18-ebe7acbc73cc
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: globalAddress
+name: 'Global Address'

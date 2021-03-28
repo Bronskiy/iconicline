@@ -1,0 +1,49 @@
+field: 6ae50bdf-3ba3-43a5-abc7-629ba49bb875
+fieldLayouts:
+  c58e16f8-4dcb-4e95-b8f9-213a41ac98b1:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 28ca5c88-6eac-475d-95d7-a5c938da6e3c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  28ca5c88-6eac-475d-95d7-a5c938da6e3c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: teamHeading
+    instructions: ''
+    name: 'Team Heading'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: teamSlider
+name: 'Team Slider'
+sortOrder: 10

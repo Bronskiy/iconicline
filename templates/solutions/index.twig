@@ -1,0 +1,17 @@
+{% extends '_layout' %}
+
+{% block body %}
+<section class="container row">
+  <div class="col-md-10 offset-md-2 text-center">
+    <h1 class="mb-3"><strong>Solutions</strong></h1>
+  </div>
+</section>
+
+{% set entry = craft.entries().section('solutions').one() %}
+
+  {% for block in entry.commonSections.all() %}
+    {% include '_block_types/'~block.type ignore missing with { element: block } %}
+  {% endfor %}
+
+
+{% endblock %}

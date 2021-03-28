@@ -1,0 +1,52 @@
+{% extends '_layout' %}
+
+{% block body %}
+<section class="container">
+  <div class="text-center">
+    <h1 class="mb-3">{% if entry.commonTitle|length %}{{ entry.commonTitle }}{% else %}{{ entry.title }}{% endif %}</h1>
+    {% if entry.commonBody|length %}
+      <div class="lead">{{ entry.commonBody }}</div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-6">
+      <h2>Ways to <strong>contact us</strong></h2>
+      {% if globalAddress.commonTextField|length %}
+      <h4>Corporate address:</h4>
+      <p><i class="pd-icon icon-marker"></i>{{ globalAddress.commonTextField }}</p>
+      {% endif %}
+
+      {% if globalPhone.commonTextField|length %}
+      <h4>By phone:</h4>
+      <p><i class="pd-icon icon-phone"></i>{{ globalPhone.commonTextField }}</p>
+      {% endif %}
+
+      {% if globalEmail.commonTextField|length %}
+      <h4>By email:</h4>
+      <p><i class="pd-icon icon-email"></i>{{ globalEmail.commonTextField }}</p>
+      {% endif %}
+
+      {% if globalSocialLinks.commonSocialLinks|length %}
+      <h4>Social media</h4>
+      <div class="list-inline social-icons">
+        {% for row in globalSocialLinks.commonSocialLinks %}
+          <a href="{{ row.link }}" class="list-inline-item"><i class="pd-icon icon-{{ row.icon }}-l"></i></a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+    </div>
+    <div class="col-6">
+      {% include "_includes/_contact_form" %}
+    </div>
+  </div>
+</section>
+
+{% for block in entry.commonSections.all() %}
+  {% include '_block_types/'~block.type ignore missing with { element: block } %}
+{% endfor %}
+
+{% endblock %}

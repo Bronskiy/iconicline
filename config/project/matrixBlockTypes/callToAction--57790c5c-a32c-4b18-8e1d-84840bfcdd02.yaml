@@ -1,0 +1,153 @@
+field: 6ae50bdf-3ba3-43a5-abc7-629ba49bb875
+fieldLayouts:
+  15316168-23e4-4962-b549-f8745d97f439:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e8bf2e11-19e3-4028-9519-3ed8c304847c
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e968cdb2-bb49-4ffe-bbac-e938b2e7fd66
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dbd91894-6ca0-42a0-b932-1b5a7301bf14
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  dbd91894-6ca0-42a0-b932-1b5a7301bf14:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockLink
+    instructions: ''
+    name: 'Block Link'
+    searchable: false
+    settings:
+      addRowLabel: 'Add a button'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Link
+                -
+                  - handle
+                  - link
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Name
+                -
+                  - handle
+                  - name
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+      maxRows: '1'
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  e8bf2e11-19e3-4028-9519-3ed8c304847c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: ''
+    name: 'Block Title'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  e968cdb2-bb49-4ffe-bbac-e938b2e7fd66:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockDescription
+    instructions: ''
+    name: 'Block Description'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: callToAction
+name: 'Call to action'
+sortOrder: 4

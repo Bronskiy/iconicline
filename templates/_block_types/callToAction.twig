@@ -1,0 +1,21 @@
+<section class="call-to-action text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        {% if block.blockTitle|length %}
+          <h3 class="h2 mt-5 mb-5 text-white">{{ block.blockTitle }}</h3>
+        {% endif %}
+
+        {% if block.blockDescription|length %}
+          <div class="lead">{{ block.blockDescription }}</div>
+        {% endif %}
+
+        {% if block.blockLink|length %}
+          {% for button in block.blockLink %}
+            <a href="{{ button.link }}" class="btn btn-outline-secondary">{{ button.name }}</a>
+          {% endfor  %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

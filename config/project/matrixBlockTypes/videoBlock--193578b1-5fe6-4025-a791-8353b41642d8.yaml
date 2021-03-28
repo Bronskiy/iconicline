@@ -1,0 +1,114 @@
+field: 6ae50bdf-3ba3-43a5-abc7-629ba49bb875
+fieldLayouts:
+  2250b444-5de9-4ae7-ae59-73861c6c367b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2a59d50d-66ab-4d6d-a879-ca41fceca758
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 447027d1-e255-4591-a2a1-197cade25c4e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8ea9d22d-8129-4bd5-bd0b-aff89367744c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2a59d50d-66ab-4d6d-a879-ca41fceca758:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: ''
+    name: 'Block Title'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  447027d1-e255-4591-a2a1-197cade25c4e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockDescription
+    instructions: ''
+    name: 'Block Description'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  8ea9d22d-8129-4bd5-bd0b-aff89367744c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockVideoCode
+    instructions: ''
+    name: 'Block Video Code'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: videoBlock
+name: 'Video Block'
+sortOrder: 7

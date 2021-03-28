@@ -1,0 +1,18 @@
+fieldLayouts:
+  ac29fb44-9ba6-4f50-95d6-91de12628f57:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8a391d76-5ebb-404a-9e18-ebe7acbc73cc
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: globalPhone
+name: 'Global Phone'

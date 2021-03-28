@@ -1,0 +1,52 @@
+dateModified: 1611577115
+email:
+  fromEmail: contact@bronskiy.com
+  fromName: project-digital.bronskiy.com
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  express-forms:
+    edition: lite
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      duplicatePreventionEnabled: true
+      emailNotificationsDirectoryPath: /srv/users/serverpilot/apps/project-digital/templates/express-forms-demo/_notifications
+      enhancedUI: true
+      honeypotBehaviour: simulate_success
+      honeypotEnabled: false
+      honeypotInputName: form_handler
+      name: null
+      recaptchaEnabled: false
+      recaptchaLoadScript: true
+      recaptchaSecretKey: null
+      recaptchaSiteKey: null
+      recaptchaTheme: light
+      showErrorLogBanner: true
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: solo
+  live: true
+  name: project-digital.bronskiy.com
+  schemaVersion: 3.5.13
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

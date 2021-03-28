@@ -1,0 +1,40 @@
+fieldLayouts:
+  758d835e-4027-476d-9b7a-c8825301343c:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: examples
+name: Examples
+siteSettings:
+  fceaf36c-696c-425f-9b59-6c38305a1e8d:
+    hasUrls: true
+    template: null
+    uriFormat: 'examples/{slug}'
+structure:
+  maxLevels: 1
+  uid: ab1041fa-2b0e-4fd4-bb3d-f0e158deb1ae

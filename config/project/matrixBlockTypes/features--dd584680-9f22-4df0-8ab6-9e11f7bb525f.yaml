@@ -1,0 +1,215 @@
+field: 6ae50bdf-3ba3-43a5-abc7-629ba49bb875
+fieldLayouts:
+  b19126fa-8005-4daf-b1a6-0d2b08c75a4e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: db0236af-29d2-4ec0-a8fb-49a0f9bd05df
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7c2ef0c5-0590-46cd-97ff-8df7f7c44e70
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 24a5cd3e-5bb2-4f51-97f0-36c316e5dd4e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 30568fa7-298d-42d1-9c92-8fd4bbe40c26
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  24a5cd3e-5bb2-4f51-97f0-36c316e5dd4e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockFeatureItems
+    instructions: 'You can find icon names there http://project-digital.bronskiy.com/assets/fonts/fontello/demo.html'
+    name: 'Feature Items'
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Title
+                -
+                  - handle
+                  - title
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - Description
+                -
+                  - handle
+                  - description
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - multiline
+          -
+            - col3
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Icon Name'
+                -
+                  - handle
+                  - iconName
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+            -
+              - col2
+              - ''
+            -
+              - col3
+              - ''
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  30568fa7-298d-42d1-9c92-8fd4bbe40c26:
+    contentColumnType: string
+    fieldGroup: null
+    handle: blockIconPosition
+    instructions: ''
+    name: 'Icon Position'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Top
+            -
+              - value
+              - top
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  7c2ef0c5-0590-46cd-97ff-8df7f7c44e70:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockDescription
+    instructions: ''
+    name: 'Block Description'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  db0236af-29d2-4ec0-a8fb-49a0f9bd05df:
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: ''
+    name: 'Block Title'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: features
+name: Features
+sortOrder: 5

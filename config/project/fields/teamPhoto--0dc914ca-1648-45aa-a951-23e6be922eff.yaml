@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: 1fcb0503-f186-4e0c-a9a3-6517a424ac95
+handle: teamPhoto
+instructions: ''
+name: Photo
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:7015b8d6-6d31-41d1-9b00-cad0955939aa'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Add a photo'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:6c9ab5b7-7fe6-4457-b6b7-c2736460a953'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

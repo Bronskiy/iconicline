@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      {% if block.blockTitle|length %}
+        <h3 class="h2 mt-5 mb-5 text-white">{{ block.blockTitle }}</h3>
+      {% endif %}
+
+      {% if block.blockDescription|length %}
+        <div class="lead">{{ block.blockDescription }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if block.blockVideoCode|length %}
+{{ block.blockVideoCode|raw }}
+{% endif %}
